@@ -184,6 +184,18 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-\[50\%\] {
+    height: 50%;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-\[90vh\] {
+    height: 90vh;
+  }
   .h-screen {
     height: 100vh;
   }
