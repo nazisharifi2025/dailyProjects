@@ -29,7 +29,7 @@ setInterval(() => {
 }, 200);
 
 // counter
-const allcount = document.querySelectorAll(".text-3xl");
+const counters = document.querySelectorAll(".text-3xl");
 function countUp(el, target) {
   let current = 0;
   const incerment = target / 100;
@@ -61,3 +61,4 @@ const observer = new IntersectionObserver(
     threshold: 0.6,
   }
 );
+counters.forEach((counter) => observer.observe(counter));
