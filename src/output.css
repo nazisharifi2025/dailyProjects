@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-cyan-500: oklch(71.5% 0.143 215.221);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-fuchsia-600: oklch(59.1% 0.293 322.896);
     --color-fuchsia-900: oklch(40.1% 0.17 325.612);
     --color-pink-500: oklch(65.6% 0.241 354.308);
@@ -327,6 +328,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
   }
   .text-fuchsia-900 {
     color: var(--color-fuchsia-900);
