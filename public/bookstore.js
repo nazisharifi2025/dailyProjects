@@ -17,7 +17,7 @@ setInterval(() => {
 let indexs = 0;
 const text = "Don't Forget this : new book , new world!";
 const h1 = document.createElement("h1");
-h1.classList.add("text-3xl");
+h1.classList.add("text-5xl");
 hero.append(h1);
 setInterval(() => {
   h1.textContent += text[indexs];
@@ -26,16 +26,22 @@ setInterval(() => {
     indexs = 0;
     h1.textContent = "";
   }
-}, 1000);
+}, 200);
 
-// setInterval(() => {
-//   const h1 = Document.createElement("h1");
-//   hero.appendChild(h1);
-//   h1
-//   h1.textContent += text[index];
-//   index++;
-//   if (index > text.length) {
-//     index = 0;
-//     h1.textContent = "";
-//   }
-// }, 5000);
+// counter
+const allcount = document.querySelectorAll(".text-3xl");
+function countUp(el, target) {
+  let current = 0;
+  const incerment = target / 100;
+
+  const updateCount = () => {
+    current += incerment;
+    if (current < target) {
+      el.textContent = Math.ceil(current);
+      requestAnimationFrame(updateCount);
+    } else {
+      el.textContent = target;
+    }
+  };
+  updateCount();
+}
