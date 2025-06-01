@@ -8,6 +8,7 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-fuchsia-600: oklch(59.1% 0.293 322.896);
@@ -328,6 +329,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-amber-400 {
+    color: var(--color-amber-400);
   }
   .text-blue-600 {
     color: var(--color-blue-600);
