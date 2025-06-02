@@ -120,19 +120,19 @@ const Productlist = {
   },
 };
 
-// Productlist.showSingleBook();
+Productlist.showSingleBook();
 
-// // animation of carts
-// const oBserver = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("animate-fade-up-show");
-//       } else {
-//         entry.target.classList.remove("animate-fade-up-show");
-//       }
-//     });
-//   },
+// animation of carts
+const oBserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fade-up-show");
+      } else {
+        entry.target.classList.remove("animate-fade-up-show");
+      }
+    });
+  },
 //   {
 //     threshold: 0.3,
 //   }
