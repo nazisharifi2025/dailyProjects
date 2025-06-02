@@ -107,18 +107,18 @@ const Productlist = {
     const divParent = document.getElementById("parent");
     this.bookList.forEach((book) => {
       const div = document.createElement("div");
-//       div.classList.add("cart");
-//       div.innerHTML = `<img src="${book.imgUrl}" class="h-full ">
-//       <div class="div-text">
-//       <h1>${book.bookName}</h1>
-//       <h2>${book.author}</h2>
-//       <button class="btn-add">Add to cart</button>
-//       </div>
-//       `;
-//       divParent.append(div);
-//     });
-//   },
-// };
+      div.classList.add("cart");
+      div.innerHTML = `<img src="${book.imgUrl}" class="h-full ">
+      <div class="div-text">
+      <h1>${book.bookName}</h1>
+      <h2>${book.author}</h2>
+      <button class="btn-add">Add to cart</button>
+      </div>
+      `;
+      divParent.append(div);
+    });
+  },
+};
 
 // Productlist.showSingleBook();
 
