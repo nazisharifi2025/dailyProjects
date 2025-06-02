@@ -96,13 +96,13 @@ const Productlist = {
     new Product("../public/img/hope.jpg", "The big hopes", "Charels Dicines"),
     new Product("../public/img/hall.jpg", "The hall of wolf", "Hellari mintal"),
     new Product("../public/img/fr.jpg", "Frankishtain", "Marry shelley"),
-//     new Product("../public/img/bad.jpg", "Badbadakbaz", "Khallid Hussaini"),
-//     new Product(
-//       "../public/img/bland.jpg",
-//       "The Windful hills",
-//       "Emilly bronte"
-//     ),
-//   ],
+    new Product("../public/img/bad.jpg", "Badbadakbaz", "Khallid Hussaini"),
+    new Product(
+      "../public/img/bland.jpg",
+      "The Windful hills",
+      "Emilly bronte"
+    ),
+  ],
 //   showSingleBook() {
 //     const divParent = document.getElementById("parent");
 //     this.bookList.forEach((book) => {
