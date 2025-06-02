@@ -6,11 +6,22 @@
     <title>Document</title>
     <script src="bookstore.js" defer></script>
     <link rel="stylesheet" href="../src/output.css" />
+    <style>
+      .animate-fade-up-init {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+      .animate-fade-up-show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
   </head>
   <body>
     <!-- Nav bar start -->
     <div
-      class="h-20 w-full fixed top-0 left-0 bg-white shadow-md font-semibold shadow-gray-700 flex justify-between items-center px-3"
+      class="h-20 w-full fixed top-0 left-0 bg-white shadow-md font-semibold shadow-emerald-800 text-emerald-800 flex justify-between items-center px-3"
     >
       <div class="flex justify-center space-x-3 items-center text-xl">
         <img
@@ -32,24 +43,62 @@
     <!-- slider start -->
     <div
       id="heroDiv"
-      class="h-screen text-3xl font-bold flex justify-center items-center w-full bg-[url(../public/img/slide1.jpg)] bg-no-repeat bg-cover"
+      class="h-screen font-bold flex justify-center text-emerald-800 items-center w-full bg-[url(../public/img/slide1.jpg)] bg-no-repeat bg-cover"
     ></div>
     <!-- slider end -->
     <!-- counter start -->
-    <div class="h-[50vh] w-full flex justify-evenly items-center space-x-5">
+    <div
+      class="h-[50vh] w-full flex justify-evenly items-center text-emerald-800 space-x-5"
+    >
       <div class="flex flex-col items-center gap-2">
         <h1 data-target="80" class="font-bold text-3xl font-serif">0</h1>
         <h2 class="text-[20px]">Motivational books</h2>
       </div>
       <div class="flex flex-col items-center gap-2">
         <h1 data-target="30" class="font-bold text-3xl font-serif">0</h1>
-        <h2 class="text-[20px]">Motivational books</h2>
+        <h2 class="text-[20px]">Educational books</h2>
       </div>
       <div class="flex flex-col items-center gap-2">
         <h1 data-target="60" class="font-bold text-3xl font-serif">0</h1>
-        <h2 class="text-[20px]">Motivational books</h2>
+        <h2 class="text-[20px]">Novel books</h2>
       </div>
     </div>
     <!-- counter end -->
+    <!-- Product start -->
+    <div
+      id="parent"
+      class="w-full flex flex-wrap justify-center gap-10 items-center px-3.5"
+    ></div>
+    <!-- product end -->
+    <!-- footer start -->
+    <footer class="h-[49vh] w-full bg-emerald-800 pt-1 mt-7">
+      <div
+        class="text-[17px] font-bold justify-center text-white flex gap-20 px-28 my-10 items-center"
+      >
+        <div class="w-[40%]">
+          <img
+            src="../public/img/download.png"
+            class="rounded-full h-20 w-20"
+            alt=""
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+            nobis atque veniam possimus officiis aspernatur, ad qui corporis
+            tempore, fugit eius aliquid vero dolore. Aspernatur voluptas qui ad
+            facere earum?
+          </p>
+        </div>
+        <div class="w-[40%]">
+          <h3>add: Sharifi High School, Jaghori, Ghazni, Afghanistan.</h3>
+          <h3>www.sharifionlinebookstore.com</h3>
+          <h3>Phone number: 07950665893</h3>
+        </div>
+      </div>
+      <div class="flex justify-center items-center text-white text-xl">
+        Sharifi High School @2025
+      </div>
+    </footer>
+
+    <!-- footer end -->
   </body>
 </html>

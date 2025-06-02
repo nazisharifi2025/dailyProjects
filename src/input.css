@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@layer components {
+  .btn-add {
+    @apply bg-emerald-800 rounded-md py-2 w-[160px] text-white font-bold;
+  }
+  .div-text {
+    @apply flex flex-col gap-4 justify-center pr-2 font-bold text-emerald-800;
+  }
+  .cart {
+    @apply flex gap-6 animate-fade-up-init scroll-animate items-center ring-8 ring-emerald-800 w-[350px] h-[30vh];
+  }
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+}
