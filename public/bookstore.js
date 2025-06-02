@@ -75,8 +75,8 @@ class Product {
   }
 }
 //  book list array
-// const Productlist = {
-//   bookList: [
+const Productlist = {
+  bookList: [
 //     new Product(
 //       "../public/img/7 habit.jpg",
 //       "7 habits of affective people",
