@@ -82,7 +82,7 @@ const Productlist = {
       "7 habits of affective people",
       "stefan Covey"
     ),
-//     new Product("../public/img/5sec.jpg", "The 5 second rule", "Mell rabins"),
+    new Product("../public/img/5sec.jpg", "The 5 second rule", "Mell rabins"),
 //     new Product(
 //       "../public/img/sleep.jpg",
 //       "The heavy sleep",
