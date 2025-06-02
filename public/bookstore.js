@@ -77,11 +77,11 @@ class Product {
 //  book list array
 const Productlist = {
   bookList: [
-//     new Product(
-//       "../public/img/7 habit.jpg",
-//       "7 habits of affective people",
-//       "stefan Covey"
-//     ),
+    new Product(
+      "../public/img/7 habit.jpg",
+      "7 habits of affective people",
+      "stefan Covey"
+    ),
 //     new Product("../public/img/5sec.jpg", "The 5 second rule", "Mell rabins"),
 //     new Product(
 //       "../public/img/sleep.jpg",
