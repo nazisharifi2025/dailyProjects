@@ -133,10 +133,10 @@ const oBserver = new IntersectionObserver(
       }
     });
   },
-//   {
-//     threshold: 0.3,
-//   }
-// );
+  {
+    threshold: 0.3,
+  }
+);
 
 const item = document.querySelectorAll("scroll-animate");
 for (let i = 0; i < item.length; i++) {
